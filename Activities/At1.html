@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="zh-CN">    
+<head>
+    <!-- important meta -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <title>活动详情</title>
+    <!-- favicon.ico -->
+    <link href="../images/favicon.ico" type="image/x-icon" rel="bookmark"/>
+    <link href="../images/favicon.ico" type="image/x-icon" rel="icon"/>
+    <link href="../images/favicon.ico" type="image/x-icon" rel="shortcut icon"/>
+    <!-- bootstrap-3.3.4 -->
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/Activitivies.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <!-- jquery-1.11.2 -->
+    <script type="text/javascript" src="../js/jquery.js"></script>
+    <script src="../js/Activities/jquery.number.min.js"></script>
+    <!-- bootstrap-3.3.4 -->
+    <script type="text/javascript" src="../js/bootstrap.min.js"></script>
+    <script src="../js/Activities/moment.min.js"></script>
+
+</head>
+<body style="background-color: #4794f6">
+    <div class="bg pa"><img src="../images/bg.png" width="100%" height="100%"/></div>
+    <div class="container p40">
+        <div class="row">
+            <div class="col-xs-12 dps"><img src="../images/dps.png" alt="" style="width:100%"></div>
+            <div class="col-xs-12 text-center ff cw fs17 ls ws pb10">第一轮QBT免费发放开始啦！</div>
+            <div class="col-xs-12"><div class="line"></div></div>
+            <div class="col-xs-12 ls cw ff fs13 pb10 ws text-center">本轮剩余：<span class="fs17 remaining"></span>QBT</div>
+            <div class="col-xs-12 mb1"><div class="line"></div></div>
+            <div class="col-xs-12 cw text-center mb1">
+                活动时间：
+                <span class="beginMouth"></span>/<span class="beginDay"></span>
+                <span class="beginTime"></span>～
+                <span class="endMouth"></span>/<span class="endDay"></span>
+                <span class="endTime"></span>
+            </div>
+            <div class="p10 col-xs-12 hs text-center prompt br4 hide bcw"></div>
+        </div>
+        <!--红包-->
+        <div class="hb">
+            <div class="pa" style="left:0;z-index: -1"><img src="../images/hb.png" alt="" class="img-responsive img"></div>
+            <div class="row">
+                <div class="col-xs-12 ff yellow text-center mt30 mb2 fs1"> 本轮结束倒计时</div>
+                <div class="col-xs-12 ff yellow text-center mb2 content fs1">
+                    <span class="day bcw mr6 hs time_d"></span>天
+                    <span class="day bcw mr6 hs time_h"></span>时
+                    <span class="day bcw mr6 hs time_m"></span>分
+                    <span class="day bcw mr6 hs time_s"></span>秒
+                </div>
+                <div class="col-xs-12 ff text-center mb2 fs1">
+                    <p class="yellow" style="margin:0">
+                    <span class="present_left fs1">当前总额:</span>
+                    <span class="hs fs13 sum"></span>QTUM
+                    </p>
+                    <p class="yellow pr" style="left:-14px;">
+                    <span class="present_left fs1">锁定可获得:</span>
+                    <span class="hs fs13 obtain"></span>QBT
+                    </p>
+                    <span class="hide eventId"></span>
+                </div>
+                <div class="col-xs-12 fs13 text-center m-t-20">
+                    <button type="button" class="btn hs ff lock p820 fs13" data-toggle="modal" data-target="#myModal">立即锁定</button>
+                </div>
+            </div>
+        </div>
+        <!--已锁定显示页面-->
+        <div class="pr hb clear hide" id="lock_hb">
+            <div class="pa" style="left:-40px;z-index: -1;top:35px">
+                <img src="../images/hb_bg.png" alt="" style="width:104%;"></div>
+            <div class="ff cw text-center pt4 fs1"> 本轮结束倒计时</div>
+            <div class="ff cw text-center mb1 mt10 fs1">
+                <span class="day bcw mr6 hs time_d"></span>天
+                <span class="day bcw mr6 hs time_h"></span>时
+                <span class="day bcw mr6 hs time_m"></span>分
+                <span class="day bcw mr6 hs time_s"></span>秒
+            </div>
+            <div class="ff text-center pr">
+                <p class="c3 fs1">您已锁定 <span class="hs fs17 obtain"></span>QBT</p>
+                <p class="hs fs1">代币将于活动结束后统一发放！</p>
+                <p class="p20 c6">想要获得更多QBT？您可以解除锁定后，增加Qtum，重新锁定有疑问？<a href="question.html" class="hs">点这里</a></p>
+            </div>
+            <div class="fs14 text-center m-t-20">
+                <button type="button" class="btn hs ff lock p820 fs13 hide unlock" data-target="#unlockModal" data-toggle="modal">解除锁定</button>
+            </div>
+        </div>
+        <!--活动说明-->
+        <div class="sm">
+            <div class="bg2 pr" style="top:40px;">
+                <img src="../images/sm_bg.png" style="width:100%">
+                <div class="ff text-center pa cw fs14" style="top:7px;left:11%">
+                    <img src="../images/question.png" alt="">
+                    活 / 动 / 说 / 明
+                </div>
+            </div>
+            <div class="br4 bcw ff pr sm_list">
+                <p>1. 第一轮QBT发币时间为北京时间<span class="beginMouth"></span>/<span class="beginDay"></span>
+                    <span class="beginTime"></span>～
+                    <span class="endMouth"></span>/<span class="endDay"></span>
+                    <span class="endTime"></span> 为止；</p>
+                <p>2. 本轮发放的QBT上限为100万个，发币时间为09/30 12:00。届时将根据锁定额度，开始发币,按锁定时间先后发放，发完为止；</p>
+                <p>3. 本轮兑换公式：</p>
+                <!--<p>  1) 如果是首次参与者，可以获得100 QBT的奖励</p>-->
+                <p>&nbsp; 当前帐号中每3 Qtum，可以锁定 1 QBT的额度，本轮总额度为100万QBT，额度先到先得，发完为止。</p>
+                <p>4. 第二轮发币将在第一轮结束发币后启动，具体时间以官方通告为准。</p>
+            </div>
+        </div>
+    </div>
+
+    <!--完成弹出框-->
+    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <div class="bg"><img src="../images/lock_success.png" alt="" style="width:100%"></div>
+                    <button type="button" class="close pa" data-dismiss="modal" aria-label="Close" style="right:2px;top:0">
+                        <span aria-hidden="true">&times;</span></button>
+                </div>
+                <div class="modal-body">
+                    <p class="text-center hs fs13">锁定成功！</p>
+                    <p class="c9 text-center">如果您想要解锁，请退出重新进入申请解锁！</p>
+                </div>
+                <div class="modal-footer text-center">
+                    <button type="button" class="btn btn-primary p820 lock_btn" data-dismiss="modal">完成</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--解锁弹出框-->
+    <div class="modal fade" id="unlockModal" tabindex="-1">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <div class="bg"><img src="../images/lock_success.png" alt="" style="width:100%"></div>
+                    <button type="button" class="close pa" data-dismiss="modal" aria-label="Close" style="right:2px;top:0">
+                        <span aria-hidden="true">&times;</span></button>
+                </div>
+                <div class="modal-body">
+                    <p class="text-center hs fs13">解锁成功！</p>
+                    <p class="c9 text-center">如果您想要获得更多QBT，可以点击立即锁定！</p>
+                </div>
+                <div class="modal-footer text-center">
+                    <button type="button" class="btn btn-primary p820 unlock_btn" data-dismiss="modal">完成</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="../js/ajax.js"></script>
+    <script src="../js/Activities/At1.js"></script>
+</body>
+</html>

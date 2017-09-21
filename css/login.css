@@ -1,0 +1,347 @@
+html,body{
+    width:100%;
+    height:100%;
+}
+/* remove canvas default margin */
+canvas{
+    display:block;
+    vertical-align:bottom;
+    /*background-size: cover;*/
+}
+.bb{
+    border-bottom: 1px solid #ddd;
+}
+input{
+    font-family: inherit;
+    font-size: 14px;
+    border:0;
+    outline: none;
+}
+#particles-js{
+    width:100%;
+    height:95%;
+}
+.htmleaf-header{color: #fff;}
+@charset "utf-8";
+.passcard-box{
+    padding:0  4rem 0 4rem;
+    width:40%;
+    top:45%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    }
+.passcard-nav {
+    padding:10px;
+    height:24px;
+    line-height: 24px;
+    font-size: 24px;
+    color: #444444; }
+.passcard-nav .login-right-subnav {
+    margin-left: 25px;
+    font-size: 14px;
+    float: right; }
+.passcard-box .passmail-title {
+    height: 100px;
+    line-height: 76px;
+    font-size: 24px;
+    text-align: center;
+    font-weight: normal;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px; }
+.passcard-box .retrieve-pass-box {
+    min-height: 300px;
+    border-top: none; }
+.passcard-box .retrieve-pass-box {
+    border-bottom-left-radius: 4px;
+    border-bottom-right-radius: 4px; }
+.passcard-box .retrieve-pass-box .retrie-center {
+    width: 100%;
+margin:0 auto;}
+.passcard-box .retrieve-pass-box .retrie-center input {
+    margin-top: 0; }
+.passcard-box .retrieve-pass-box .input-normal-style {
+    width: 90%; }
+.text-style {
+    height: 30px;
+    padding:10px 40px 10px 2.5%;
+    margin-left: 30px;
+    color: #333;
+    font-size: 14px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    border-radius: 4px;
+    }
+.login-on .login-success{
+    border-bottom:1px solid #3498db;
+}
+.login-icon{
+    display: block;
+    height:40px;
+    width:100%;
+    margin-top:30px;
+}
+.passcard-box .retrieve-pass-box .retrie-center .user-name-tip {
+    padding-left: 3px; }
+.passcard-box .retrieve-pass-box .retrie-center .form-tip {
+    padding: 10px 0;
+    display: block;
+    font-size: 12px;
+    *zoom: 1; }
+.passcard-box .retrieve-pass-box .intensity .bg-red-strength {
+    background: #f4533b; }
+.passcard-box .retrieve-pass-box .intensity i {
+    display: inline-block;
+    vertical-align: middle;
+    zoom: 1;
+    *display: inline;
+    width: 52px;
+    height: 8px;
+    margin-right: 2px;
+    line-height: 8px;
+    text-align: center;
+    color: #ffffff;
+    font-size: 12px;
+    background: #bbbbbb;
+    border-radius: 50px;
+    float: left; }
+.passcard-box .retrieve-pass-box .intensity {
+    float: right; }
+.btn-default-main{
+    height: 42px;
+    color: #fff;
+    background: #4c93f9;
+    border: 1px solid #4c93f9;
+    border-radius: 4px;
+    cursor: pointer;
+    text-align: center;
+}
+.passcard-box .retrieve-pass-box .passcard-btn{
+    width:100%;
+    font-size: 16px;
+}
+.registerFooter{
+    bottom:2rem;
+    width:40%;
+    left:30%;
+}
+.registerFooter p{
+    font-size: 12px;
+    text-align: center;
+}
+
+.passcard-box .user-name-tip {
+    padding-left: 3px; }
+.passcard-box  .red-color {
+    color: #e4393c; }
+.passcard-box .text-wrong-style {
+    border-bottom: 1px solid #4c93f9;
+    }
+
+.passcard-box .mail-con-wrap .receive-mail-box {
+    margin-top: 36px;
+    margin-bottom: 17px; }
+.passcard-box .receive-mailbtn {
+    display: inline-block;
+    vertical-align: middle;
+    zoom: 1;
+    *display: inline;
+    width: 100%;
+    height: 42px;
+    text-align: center;
+    line-height: 42px;
+    font-size: 16px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box; }
+.passcard-box .mail-con-wrap .resend {
+    line-height: 22px;
+    font-size: 12px;
+    color: #999999; }
+.passcard-box .retrieve-pass-box .retrieve-password {
+    font-size: 20px;
+    line-height: 20px;
+    color: #333333;
+    margin-bottom: 40px;
+    text-align: center; }
+.passcard-box .retrieve-pass-box .verification-code {
+    width: 280px;
+    margin-right: 7px;
+}
+.passcard-box i{
+    display: block;
+    width:22px;
+    height:20px;
+    background: url("../images/app-img/icon.png") no-repeat;
+}
+.passcard-box i.icon-user{
+    background-position: -22px -25px;
+}
+.passcard-box i.icon-email{
+    background-position: -44px -25px;
+}
+.passcard-box i.icon-id{
+    background-position: -70px -25px;
+}
+.passcard-box i.icon-password{
+    background-position: 4px -24px;
+}
+.passcard-box i.icon-user.active{
+    background-position: -22px 0;
+}
+.passcard-box i.icon-email.active{
+    background-position: -44px 0;
+}
+.passcard-box i.icon-password.active{
+    background-position: 4px 0;
+}
+.passcard-box i.icon-id.active{
+    background-position: -70px 0;
+}
+.logo{
+width:25%;
+}
+.form_fail,.form_ok{
+    position: absolute;
+    top:10px;
+    right:8px;
+}
+/*用户协议*/
+.menu-list li a{
+    display: block;
+    height:52px;
+    line-height: 52px;
+    padding:0 30px;
+}
+.menu-list li a:hover{
+    color:#fff;
+}
+.current span{
+    position: absolute;
+    left:0;
+    top:10px;
+    height:32px;
+    width:0;
+    border-right: 3px solid #01a1fa;
+}
+.menu-list li:hover{
+    background: #01a1fa;
+}
+.middle-title-wrap{
+    width:100%;
+    line-height: 65px;
+    box-sizing: border-box;
+    padding:0 30px;
+}
+.border-bottom{
+    border-bottom: 1px solid #eee;
+}
+.middle-title{
+    font-size: 16px;
+    display: inline-block;
+    vertical-align: middle;
+    zoom:1;
+}
+.protocol-box{
+    padding:0 30px 17px;
+}
+.protocol-middle-con{
+    font-size: 14px;
+    margin-top:25px;
+    padding-bottom: 20px;
+}
+.piecemeal-box{
+    padding-bottom: 13px;
+    border-bottom: 1px solid #eee;
+}
+.piecemeal-box h4{
+    font-size: 16px;
+    font-weight: 600;
+    margin-top:20px;
+    margin-bottom: 5px;
+}
+.sub-protocol-box{
+    margin-top:14px;
+}
+.sub-protocol-box p:first-of-type{
+    font-weight: 600;
+}
+.retrie-center span{
+    display: inline-block;
+    height:37px;
+}
+.checkbox-wrap{
+    font-size: 12px;
+    white-space: nowrap;
+}
+/*登录页面*/
+
+.ipt-default-current{
+    width:100%;
+    margin-bottom: 20px;
+}
+.forget-password{
+    text-align: right;
+    line-height: 14px;
+}
+.btn-current-big{
+    width:100%;
+    height:42px;
+    font-size: 16px;
+}
+.loadding-btn{
+    cursor: default;
+}
+.ipt-tips-default{
+    color:#f4533b;
+    width:100%;
+    padding:9px 20px 7px 45px;
+    border-radius: 4px;
+    border:1px solid #d46f16;
+    background: url("../images/error.png") 19px 11px no-repeat #ffe6e5;
+    display: block;
+    box-sizing: border-box;
+}
+/*验证邮箱*/
+.receieve-mail-box{
+    width:100%;
+}
+.pop-up-confirm{
+    width:300px;
+    position: fixed;
+    top:50%;
+    left:50%;
+    margin-left: -150px;
+    margin-top:-120px;
+    z-index: 13;
+    box-shadow: 0 0 6px rgba(0,0,0,.2);
+    box-sizing: border-box;
+    vertical-align: middle;
+    padding:0 0 83px;
+}
+.tips-text{
+    width:100%;
+    font-size: 16px;
+    padding:56px 30px 0;
+    box-sizing: border-box;
+}
+.pop-btn-con{
+    width:100%;
+}
+.pop-confirm,.pop-cancel{
+    width:120px;
+    margin:20px 8px 0;
+}
+.btn-default-secondary{
+    background: transparent;
+    border:1px solid #ddd;
+    cursor: pointer;
+    height:42px;
+}
+/*找回密码*/
+
+
+
+
+
+
